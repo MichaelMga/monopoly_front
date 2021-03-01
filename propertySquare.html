@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+  <style type="text/css">
+	
+	body{
+
+		background: darkBlue;
+	}	
+
+
+	.rpSquare{
+
+		position: absolute;
+
+		top: 15vh;
+
+		left: 20vw;
+
+		height: 4vw;
+
+		width: 4vw;
+
+		background: rgb(255,255,255,0.35);
+
+		display: flex;
+
+		flex-direction: column;
+
+		justify-content: space-around;
+
+		align-items: center;
+
+		border-radius: 10px;
+
+		color: rgb(0,255,0)
+
+	 }
+
+	 .rpSquareHeader{
+
+	 	position: absolute;
+
+	 	bottom:9%;
+
+	 	right: 9%;
+
+	 	height: 5%;
+
+	 	width: 5%;
+
+	 	background: rgb(0,255,0);
+
+	 	z-index: 2;
+
+	 	border-radius: 15px;
+	 }
+
+
+	 .rpSquareB{
+
+	 	height: 60%;
+
+	 	width: 100%;
+
+
+	 }
+
+	 .rpSquareC{
+
+	 	height: 40%;
+
+	 	width: 100%;
+
+	 	display: flex;
+
+	 	flex-direction: column;
+
+	 	justify-content: space-around;
+
+	 	margin-bottom: 15%;
+
+
+	 }
+
+	 .rpSquareCA{
+
+	 	height: 30%;
+
+	 	width: 100%;
+
+	 	display: flex;
+
+	 	justify-content: flex-start;
+
+	 	align-items: center;
+
+	 	font-size: 0.5vw;
+
+	    margin-left: 10%;
+
+
+
+	 }
+
+	 .rpSquareCB{
+
+	 	height: 30%;
+
+	 	width: 100%;
+
+	 	display: flex;
+
+	 	justify-content: flex-start;
+
+	 	align-items: center;
+
+	 	font-size: 0.5vw;
+
+	 	margin-left: 10%;
+	 }
+
+	  .rpSquareCC{
+
+	 	height: 30%;
+
+	 	width: 100%;
+
+	 	display: flex;
+
+	 	justify-content: flex-start;
+
+	 	align-items: center;
+
+	 	font-size: 0.5vw;
+
+	 	margin-left: 10%;
+	 }
+
+
+	</style>
+
+	<div class='rpSquare'>
+
+		<div class='rpSquareHeader'>
+			
+		</div>
+
+		<div class='rpSquareB'>
+
+	        <canvas id="myChart" width="250" height="250" style="font-size: 8px"></canvas>	
+			
+		</div>
+
+		<div class='rpSquareC'>
+
+			<div class='rpSquareCA'>Av.des ch.elysees</div>
+
+			<div class='rpSquareCB'>landlord : none</div>
+
+			<div class='rpSquareCC'>$300</div>
+			
+
+		</div>
+
+    	
+
+   </div>
+
+   <div>
+   	
+
+   </div>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+	<script type="text/javascript">
+
+	var squareChart1 = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+     type: 'bar',
+
+     // The data for our dataset
+     data: {
+        labels: ['', '', '', '', 'May'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: ["rgb(0,255,0,0.9)", "rgb(0,255,0,0.9)", "rgb(0,255,0,0.9)", "rgb(0,255,0,0.3)", "rgb(0,255,0,0.3)"],
+            borderColor: 'rgb(255,0,0)',
+            data: [1,2,3,4,5]
+        }]
+    },
+
+    // Configuration options go here
+   options: {
+    legend: {
+        display: false
+    },
+    tooltips: {
+        callbacks: {
+           label: function(tooltipItem) {
+                  return tooltipItem.yLabel;
+           }
+        }
+    }
+}, 
+ scales: {
+       xAxes: [{
+        ticks: {
+               display: false
+        }
+      }]
+    }
+  }
+);
+		
+
+	</script>
+
+
+
+	<img src="aiface.png" style="position:absolute; left:20.2vw; top:16vh;height: auto; width: 0.45vw;">
+
+</body>
+</html>

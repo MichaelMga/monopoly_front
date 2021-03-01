@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+	<style type="text/css">
+
+	.homePropertyDiv{
+
+		position: absolute;
+
+		top: 10vh;
+
+		height: 30vh;
+
+		left: 5vw;
+
+		width: 15vw;
+
+		background: darkBlue;
+
+		display: flex;
+
+		flex-direction: column;
+
+		justify-content: space-around;
+
+		align-items: flex-end;
+
+		border-radius: 5px;
+
+
+	}
+
+	.homePropertyDivA{
+
+		background: rgb(0,0,255,0.6);
+
+		height: 7.5%;
+
+		width: 60%;
+
+		margin-right: 5%;
+
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: center;
+
+		justify-content: space-between;
+	}
+
+
+	.homePropertyDivB{
+
+		background: rgb(0,0,255,0.6);
+
+		height: 100%;
+
+		width: 40%;
+
+		background: red;
+
+	}
+
+
+
+	.homePropertyDivAA{
+		justify-content: space-between;
+
+		height: 99%;
+
+		width: 35%;
+
+		margin-left: 10%;
+
+		display: flex;
+
+	}
+
+
+	.homePropertyDivAB{
+
+
+		justify-content: space-between;
+
+		height: 75%;
+
+		width: 48%;
+
+		display: flex;
+
+		flex-direction: column;
+
+		justify-content: space-around;
+
+		align-items: center;
+
+		border-radius: 3px;
+	
+	}
+
+
+
+	.homePropertyDivABA{
+
+		height: 30%;
+
+		width: 85%;
+
+		background: black;
+
+		border-radius: 15px;
+
+
+	}
+
+
+	.homePropertyDivABB{
+		
+		height: 30%;
+
+		width: 85%;
+
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: space-around;
+
+		align-items: center;
+
+	}
+
+	.homePropertyDivABBA{
+
+		height: 90%;
+
+		width: 7%;
+
+		border-radius: 20px;
+
+		background: yellow;
+
+	}
+
+
+	.homePropertyDivABAA{
+
+		height: 22%;
+
+		width: 15%;
+
+		background: yellow;
+
+		border-radius: 20px;
+
+		margin-bottom: 10%;
+
+	}
+
+		
+
+	</style>
+
+    <div class='homePropertyDiv'>
+
+
+    	<div id='class="homePropertyDivB'>
+
+    		
+    		
+
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+
+
+    		
+    		<div class="homePropertyDivAA">
+                 <canvas id="myCanvas" width="150" height="60" style="font-size: 8px"></canvas>     		</div>
+
+    		<div class="homePropertyDivAB">
+    			<div class='homePropertyDivABA'></div>
+    			<div class='homePropertyDivABB'>
+    				<div class='homePropertyDivABBA'></div>
+    				<div class='homePropertyDivABBA' style="opacity: 0.4"></div>
+    				<div class='homePropertyDivABBA' style="opacity: 0.4"></div>
+    				<div class='homePropertyDivABBA' style="opacity: 0.4"></div>
+    				<div class='homePropertyDivABBA' style="opacity: 0.4"></div>
+    			</div>
+    		</div>
+
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+    	</div>
+
+
+    	<div class='homePropertyDivA'>
+    		
+    		<div class="homePropertyDivAA"></div>
+
+    		<div class="homePropertyDivAB"></div>
+
+    	</div>
+
+
+
+
+  
+    </div>
+	
+	
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+  <script type="text/javascript">
+
+    var ctx = document.getElementById('myCanvas').getContext('2d');
+
+
+
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'doughnut',
+
+    // The data for our dataset
+    data: {
+        labels: ['' , 'May'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: ["rgb(0,255,0,0.9)", "rgb(255,0,0,0.7)"],
+            borderColor: 'rgb(255,0,0)',
+            data: [40,100]
+        }]
+    },
+
+    // Configuration options go here
+   options: {
+    legend: {
+        display: false
+    },
+    tooltips: {
+        callbacks: {
+           label: function(tooltipItem) {
+                  return tooltipItem.yLabel;
+           }
+        }
+    }
+}, 
+ scales: {
+       xAxes: [{
+        ticks: {
+               display: false
+        }
+      }]
+    }
+  }
+);
+    
+
+
+
+</script>
+
+</body>
+</html>
