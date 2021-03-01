@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+
+<body>
+
+<style type="text/css">
+ 
+
+ body{
+
+   background: darkBlue;
+ }
+
+ .tradeScreen{
+   background: rgb(255,255,255,0.3);
+   height: 70vh;
+   width: 50vw;
+   position: absolute;
+   top: 15vh;
+   left: 25vw;
+   border-radius: 10px;
+   display:flex;
+   flex-direction:column;
+   align-items: center;
+   justify-content: space-around;
+   font-size: 0.8vw;
+
+ }
+
+
+ .tradeScreenTop{
+   height:8%;
+   width:90%;
+   border-radius: 5px;
+   background: rgb(255,255,255,0.15);
+ }
+
+
+ .tradeScreenBottom{
+   height:80%;
+   width:95%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+
+ .tradeScreenButtons{
+     height: 8%;
+     width: 90%;
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-end;
+     align-items:center;
+     background:rgb(255,255,255,0.1);
+     border-radius:5px;
+  }
+
+   .tradeScreenButtonsA{ 
+
+      height:80%;
+      width:30%;
+      display:flex;
+      justify-content: space-around;
+      align-items: center;
+      color:rgb(0,255,0,0.75);
+      font-size: 1.3vw;
+   }
+
+
+   .tradeScreenButtonsAA{
+
+      height:80%;
+      width:30%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:rgb(255,255,255,0.1);
+      border-radius: 6px;
+   }
+
+
+   .tradeScreenButtonsAB{
+      height:80%;
+      width:30%;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background:rgb(255,255,255,0.1);
+      border-radius: 6px;
+   }
+
+   .tradeScreenButtonsB{ 
+      height:80%;
+      width:40%;
+      display:flex;
+      align-items:center;
+   }
+
+ .tradeScreenA{
+   height:45%;
+   width:95%;
+   border-radius: 10px;
+   background: rgb(255,255,255,0.1);
+   display:flex;
+   flex-direction:row; 
+   justify-content: space-around;
+   color: green;
+ }
+
+ .tradeScreenAA{
+   height: 100%;
+   width: 75%;
+   display: flex;
+   flex-direction:row;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ .tradeScreenAAA{
+   height:100%;
+   width:30%;
+   display:flex;
+   flex-direction:column;
+   justify-content:flex-start;
+   align-items:center;
+ }
+
+
+ .tradeScreenAAAA{
+    height:30%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ }
+
+
+ .tradeScreenAAAB{
+
+    height: 60%;
+    width: 100%;
+ }
+
+
+ .tradeScreenAAB{
+   height: 100%;
+   width: 60%;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items:center;
+ }
+
+ .tradeScreenAABA{
+   height:15%;
+   width: 100%;
+   display:flex;
+   justify-content:space-around;
+   align-items: center;
+   flex-direction: row;
+ }
+
+ .tradeScreenAABAA{
+   height:80%;
+   width:5%;
+   display:flex;
+   align-items:center;
+   justify-content:flex-start;
+   opacity: 0.8;
+ }
+
+ .tradeScreenAABAAA{
+   height:70%;
+   width:100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+ .colorSquare{
+   height:50%;
+   width:70%;
+   background: rgb(255,0,0,0.55);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .tradeScreenAABAAB{
+   height:20%;
+   width:100%;
+   display:flex;
+   flex-direction: column;
+   justify-content:space-around;
+   align-items:center;
+   font-size: 0.7vw;
+ }
+
+ .tradeScreenAABAABA{
+   height: 20%; 
+   width: 100%;
+   font-size: 0.5vw;
+   color:rgb(0,255,0,0.75);
+ }
+
+
+
+ .tradeScreenAABAB{
+   height: 100%;
+   width: 55%;
+   display:flex;
+   align-items:center;
+   justify-content: flex-start;
+   color: rgb(0,255,0,0.9)
+ }
+
+
+
+ .tradeScreenAABBA{
+   height: 100%;
+   width: 20%;
+ }
+
+
+ .tradeScreenAABBB{
+   height: 100%;
+   width: 80%;
+
+ }
+
+
+ .tradeScreenAABCA{
+   background: purple;
+   height: 100%;
+   width: 20%;
+ }
+
+
+ .tradeScreenAABCB{
+   height: 100%;
+   width: 80%;
+
+ }
+
+
+
+ .tradeScreenAABDA{
+   background: purple;
+   height: 100%;
+   width: 20%;
+ }
+
+
+ .tradeScreenAABDB{
+   height: 100%;
+   width: 80%;
+
+ }
+
+
+
+
+
+
+ .tradeScreenAABB{
+   height:20%;
+   width: 100%;
+ }
+
+
+
+ .tradeScreenAABBA{
+
+
+ }
+
+ ..tradeScreenAABBB{
+
+
+ }
+
+
+ .tradeScreenAABC{
+   height:20%;
+   width: 100%;
+ }
+
+
+ .tradeScreenAABD{
+   height:20%;
+   width: 100%;
+ }
+
+
+
+
+ .tradeScreenAB{
+   height: 100%;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .tradeScreenABA{
+
+   height: 15%;
+   width: 70%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+ }
+
+
+ .tradeScreenB{
+   height: 45%;
+   width: 95%;
+   background: rgb(255,255,255,0.1);
+   border-radius: 10px;
+ }
+
+
+</style>
+
+ <div class='tradeScreen'>
+
+   <div class='tradeScreenTop'>
+   
+    </div>
+
+   <div class='tradeScreenBottom'>
+
+
+   <div class='tradeScreenA'>
+
+      <div class='tradeScreenAA'>
+         <div class='tradeScreenAAA'>
+               <div class='tradeScreenAABAAA'>
+                <img style='height: 95%;width: auto;' class="aiface" src="aiface.png">
+               </div>
+               <div class='tradeScreenAABAAB'>
+                  <div class='tradeScreenAABAABA'>
+
+                     offerer:PM45
+                     
+                  </div>
+
+                  <div class='tradeScreenAABAABA'>
+                     id n°453344453344453344
+                  </div>
+
+                  <div class='tradeScreenAABAABA'>
+                     position sq.n°24
+                  </div>
+               </div>
+         </div>
+         <div class='tradeScreenAAB'>
+            <div class='tradeScreenAABA'>
+               <div class="tradeScreenAABAA">
+                  <div class="colorSquare">
+                  
+                   </div>
+               </div>
+               <div class="tradeScreenAABAB">
+                  R. de la paix
+               </div>
+            </div>
+            <div class='tradeScreenAABB'>
+               
+            </div>
+            <div class='tradeScreenAABC'>
+            
+
+            </div>
+            <div class='tradeScreenAABD'>
+            
+            </div>
+         </div>
+      </div>
+
+      <div class='tradeScreenAB'>
+         <div class='tradeScreenABA'>
+         </div>        
+      </div>
+
+   </div>
+
+   
+   <div class='tradeScreenA'>
+
+
+
+      <div class='tradeScreenAB'>
+         <div class='tradeScreenABA'>
+         </div>        
+      </div>
+
+
+
+
+      <div class='tradeScreenAA'>
+
+         <div class='tradeScreenAAB'>
+            <div class='tradeScreenAABA'>
+               <div class="tradeScreenAABAA">
+                  <div class="colorSquare">
+                  
+                   </div>
+               </div>
+               <div class="tradeScreenAABAB">
+                  R. de la paix
+               </div>
+            </div>
+            <div class='tradeScreenAABB'>
+               
+            </div>
+
+            <div class='tradeScreenAABC'>
+            
+
+            </div>
+            <div class='tradeScreenAABD'>
+            
+            </div>
+         </div>
+
+
+
+
+         <div class='tradeScreenAAA'>
+               <div class='tradeScreenAABAAA'>
+                <img style='height: 95%;width: auto;' class="aiface" src="aiface.png">
+               </div>
+               <div class='tradeScreenAABAAB'>
+                  <div class='tradeScreenAABAABA'>
+
+                     offerer:PM45
+                     
+                  </div>
+
+                  <div class='tradeScreenAABAABA'>
+                     id n°453344453344453344
+                  </div>
+
+                  <div class='tradeScreenAABAABA'>
+                     position sq.n°24
+                  </div>
+               </div>
+         </div>
+         
+      </div>
+
+
+   </div>
+      
+   </div>
+
+
+   <div class='tradeScreenButtons'>
+
+      <div class='tradeScreenButtonsA'>
+         
+         <div class='tradeScreenButtonsAA'>X</div>
+         <div class='tradeScreenButtonsAB'>V</div>
+      </div>
+
+   </div>
+
+ </div>
+
+</body>
+</html>
